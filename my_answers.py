@@ -45,7 +45,7 @@ def build_part1_RNN(window_size):
   #  model.add(Embedding(vocabulary, hidden_units, input_length=window_size))
     model.add(LSTM(hidden_units,input_shape=(window_size,1) ))
 
-    model.add (Dense(1),activation ='linear')
+    model.add (Dense(1))
     #model.compile(loss='mean_squared_error',optimizer='adam')    
     return model
 
